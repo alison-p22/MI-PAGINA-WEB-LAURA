@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laura ✨ | Mi Rincón Especial</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Sparkles Container -->
+  <div id="sparkle-container"></div>
+
+  <!-- Barra de Navegación -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="logo">
+        <span class="logo-heart">💖</span> Laura<span class="dot">.</span>
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio" class="nav-item active"><i class="fa-solid fa-sparkles"></i> Inicio</a>
+        <a href="#conoceme" class="nav-item"><i class="fa-regular fa-heart"></i> Conóceme</a>
+        <a href="#gustos" class="nav-item"><i class="fa-solid fa-wand-magic-sparkles"></i> Lo Que Me Gusta</a>
+        <a href="#vibes" class="nav-item"><i class="fa-solid fa-music"></i> Playlist & Vibes</a>
+        <a href="#quiz" class="nav-item"><i class="fa-solid fa-star"></i> Test de Amistad</a>
+        <a href="#contacto" class="nav-item nav-btn"><i class="fa-solid fa-envelope"></i> Escríbeme</a>
+      </nav>
+
+      <button class="heart-effect-btn" id="magicHeartBtn" title="¡Haz clic para una explosión de corazones!">
+        ✨ Amor
+      </button>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO / INICIO -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-decorations">
+      <span class="floating-icon icon-1">🌸</span>
+      <span class="floating-icon icon-2">🎀</span>
+      <span class="floating-icon icon-3">✨</span>
+      <span class="floating-icon icon-4">🍓</span>
+      <span class="floating-icon icon-5">👻</span>
+      <span class="floating-icon icon-6">☀️</span>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="aesthetic-pill">
+          <span class="pill-sparkle">✨</span> Bienvenido a mi página personal
+        </div>
+        <h1 class="hero-title">
+          ¡Hola! Soy <span class="highlight-text">Laura</span>
+          <span class="waving-hand">🌷</span>
+        </h1>
+        <p class="hero-subtitle">
+          Estudiante de <strong>Grado 11</strong> en el <strong>Colegio María Currea</strong>.
+          Amante del sol, los animales, lo ácido y los maratones de misterio y terror. 
+        </p>
+
+        <div class="hero-tags">
+          <span class="tag"><i class="fa-solid fa-graduation-cap"></i> Senior '11</span>
+          <span class="tag"><i class="fa-solid fa-school"></i> María Currea</span>
+          <span class="tag"><i class="fa-solid fa-sun"></i> Team Calor</span>
+          <span class="tag"><i class="fa-solid fa-paw"></i> Pet Lover</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#conoceme" class="btn btn-primary">
+            <span>Conóceme más</span>
+            <i class="fa-solid fa-arrow-down-long"></i>
+          </a>
+          <button id="surpriseBtn" class="btn btn-secondary">
+            <i class="fa-solid fa-dice"></i> Mensaje para ti
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="image-card-frame">
+          <div class="tape-decoration"></div>
+          <div class="image-inner">
+            <img src="laura.png" alt="Foto de Laura" class="profile-pic" id="profileImage">
+            <div class="image-badge">
+              <span>💖 Grado 11</span>
+            </div>
+          </div>
+          <div class="polaroid-caption">
+            <p>Laura ✨ Prom 2026</p>
+            <span class="caption-sub">"Viviendo cada momento con brillo propio"</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN CONÓCEME -->
+  <section id="conoceme" class="section conoceme-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle-badge">Un poquito sobre mí 🎀</span>
+        <h2 class="section-title">¿Quién es Laura?</h2>
+        <div class="title-divider">
+          <span>🌸</span>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Carta Principal -->
+        <div class="about-main-card">
+          <div class="card-glass-glow"></div>
+          <div class="quote-mark">“</div>
+          <h3>Hola, soy Laura y soy estudiante del Colegio María Currea y actualmente estoy en grado 11 ✨</h3>
+          <p class="about-text">
+            Estoy viviendo una de las etapas más inolvidables: ¡el último año de colegio! 
+            Entre clases, proyectos, risas interminables en los pasillos y prepararme para lo que viene, 
+            disfruto cada instante con entusiasmo.
+          </p>
+          <p class="about-text">
+            Me considero una persona dulce, curiosa, llena de energía y con una personalidad 
+            que combina a la perfección lo tierno con gustos únicos e inesperados. 
+            Me encanta coleccionar buenos momentos, rodearme de buenas vibras y tener siempre 
+            una sonrisa para compartir.
+          </p>
+
+          <div class="school-highlight-box">
+            <div class="school-icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="school-details">
+              <h4>Colegio María Currea</h4>
+              <p>Orgullosamente cursando el <strong>Grado 11</strong> · Creando recuerdos que durarán para siempre.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjetas Rápidas de Personalidad -->
+        <div class="about-stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon pink-1"><i class="fa-solid fa-cake-candles"></i></div>
+            <div class="stat-info">
+              <span class="stat-label">Mi estilo</span>
+              <h4 class="stat-value">Aesthetic & Cute</h4>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon pink-2"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="stat-info">
+              <span class="stat-label">Destino Soñado</span>
+              <h4 class="stat-value">Playa & Sol 🏖️</h4>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon pink-3"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div class="stat-info">
+              <span class="stat-label">Mi Esencia</span>
+              <h4 class="stat-value">100% Auténtica</h4>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon pink-4"><i class="fa-solid fa-palette"></i></div>
+            <div class="stat-info">
+              <span class="stat-label">Color Favorito</span>
+              <h4 class="stat-value">Rosado & Pasteles</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN LO QUE ME GUSTA (MIS FAVORITOS) -->
+  <section id="gustos" class="section gustos-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle-badge">Lo que me hace sonreír 🌟</span>
+        <h2 class="section-title">Mis Cosas Favoritas</h2>
+        <p class="section-description">
+          Las cosas que llenan mis días de diversión, sabor y emociones fuertes.
+        </p>
+        <div class="title-divider">
+          <span>💖</span>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <!-- 1. Los Animales -->
+        <div class="favorite-card" data-tilt>
+          <div class="card-pill">Ternura pura 🐾</div>
+          <div class="card-icon-wrapper">
+            <span class="card-emoji">🐶🐱</span>
+          </div>
+          <h3 class="card-title">Los Animales</h3>
+          <p class="card-desc">
+            Siento un amor gigante por los animales. Tienen una lealtad, pureza e inocencia que me llena el corazón. 
+            Cualquier perrito o gatito que vea por la calle me alegra el día al instante. ¡Protegerlos y consentirlos es de mis cosas preferidas!
+          </p>
+          <div class="card-footer-tags">
+            <span>#DogLover</span>
+            <span>#CatLover</span>
+            <span>#AmorPuro</span>
+          </div>
+        </div>
+
+        <!-- 2. Tierra Caliente -->
+        <div class="favorite-card warm-card" data-tilt>
+          <div class="card-pill">Vibra Tropical 🌴</div>
+          <div class="card-icon-wrapper">
+            <span class="card-emoji">☀️🏖️</span>
+          </div>
+          <h3 class="card-title">La Tierra Caliente</h3>
+          <p class="card-desc">
+            ¡Mil veces el calor antes que el frío! Me fascina el clima cálido, sentir el solcito en la piel, 
+            disfrutar de una tarde en la piscina con amigos, tomar algo refrescante y esa sensación de vacaciones 
+            eternas y libertad que solo da la tierra caliente.
+          </p>
+          <div class="card-footer-tags">
+            <span>#SummerVibes</span>
+            <span>#SolYBrillo</span>
+            <span>#Piscina</span>
+          </div>
+        </div>
+
+        <!-- 3. Lo Ácido -->
+        <div class="favorite-card sour-card" data-tilt>
+          <div class="card-pill">Explosión de sabor 🍋</div>
+          <div class="card-icon-wrapper">
+            <span class="card-emoji">🍋🍬</span>
+          </div>
+          <h3 class="card-title">Todo lo Ácido</h3>
+          <p class="card-desc">
+            ¡Entre más ácido, mejor! Me encantan las gomitas ácidas, el limón con sal, frutas como el maracuyá y el mango biche, 
+            y los dulces con ese toquecito chispeante que te hace hacer caras pero te deja queriendo comer más. ¡Es una adicción deli!
+          </p>
+          <div class="card-footer-tags">
+            <span>#SourCandy</span>
+            <span>#LimónLover</span>
+            <span>#MangoBiche</span>
+          </div>
+        </div>
+
+        <!-- 4. Series de Terror -->
+        <div class="favorite-card spooky-card" data-tilt>
+          <div class="card-pill">Adrenalina pura 🍿</div>
+          <div class="card-icon-wrapper">
+            <span class="card-emoji">👻🎬</span>
+          </div>
+          <h3 class="card-title">Series de Terror</h3>
+          <p class="card-desc">
+            Aunque parezca súper tierna y fan del rosado... ¡mi pasión secreta son las series de terror, suspenso y misterio! 
+            Amo apagar las luces, arroparme y ver historias de miedo que te ponen los pelos de punta y la mente a mil por hora.
+          </p>
+          <div class="card-footer-tags">
+            <span>#HorrorSeries</span>
+            <span>#Suspenso</span>
+            <span>#MaratónNocturno</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN VIBES & PLAYLIST ESTILO POP / LOFI AESTHETIC -->
+  <section id="vibes" class="section vibes-section">
+    <div class="container">
+      <div class="vibes-box">
+        <div class="vibes-left">
+          <span class="subtitle-badge">Vibra Acústica 🎧</span>
+          <h2 class="section-title text-left">Mi Playlist Diaria</h2>
+          <p class="vibes-desc">
+            La música me acompaña en todo momento: estudiando para 11, en mis días de sol o descansando en mi cuarto. 
+            ¡Aquí tienes una muestra de los sonidos que van con mi esencia!
+          </p>
+
+          <div class="music-player-widget">
+            <div class="music-cover">
+              <img src="laura.png" alt="Cover Laura">
+              <div class="music-pulse-circle"></div>
+            </div>
+            <div class="music-info">
+              <span class="now-playing-tag">REPRODUCIENDO VIBES</span>
+              <h4 id="songTitle">El Final del Cuento 🪗💖</h4>
+              <p id="songArtist">Luifer Cuello · Favorita de Laura</p>
+              
+              <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progressFill"></div>
+              </div>
+              <div class="progress-time">
+                <span id="currentTime">1:24</span>
+                <span>3:30</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="player-controls">
+            <button class="ctrl-btn" id="prevTrackBtn"><i class="fa-solid fa-backward-step"></i></button>
+            <button class="ctrl-btn play-btn" id="playBtn"><i class="fa-solid fa-play" id="playIcon"></i></button>
+            <button class="ctrl-btn" id="nextTrackBtn"><i class="fa-solid fa-forward-step"></i></button>
+          </div>
+        </div>
+
+        <div class="vibes-right">
+          <h3 class="tracklist-title"><i class="fa-solid fa-heart"></i> Canciones en Repeat</h3>
+          <ul class="tracklist">
+            <li class="track-item active" data-title="El Final del Cuento 🪗💖" data-artist="Luifer Cuello · Favorita de Laura">
+              <span class="track-num">01</span>
+              <div class="track-meta">
+                <h5>El Final del Cuento 🪗💖</h5>
+                <small>Luifer Cuello · En Repeat</small>
+              </div>
+              <span class="track-dur"><i class="fa-solid fa-volume-high"></i></span>
+            </li>
+            <li class="track-item" data-title="30 Mil Pies ✈️✨" data-artist="Blessd · Laura's Hits">
+              <span class="track-num">02</span>
+              <div class="track-meta">
+                <h5>30 Mil Pies ✈️✨</h5>
+                <small>Blessd · Flow Favorito</small>
+              </div>
+              <span class="track-dur">2:45</span>
+            </li>
+            <li class="track-item" data-title="Sunny Pool Days 🌴" data-artist="Tierra Caliente Acoustic">
+              <span class="track-num">03</span>
+              <div class="track-meta">
+                <h5>Sunny Pool Days 🌴</h5>
+                <small>Brisa Tropical & Melodías</small>
+              </div>
+              <span class="track-dur">2:56</span>
+            </li>
+            <li class="track-item" data-title="Stranger Whispers 👻" data-artist="Midnight Terror Soundtrack">
+              <span class="track-num">04</span>
+              <div class="track-meta">
+                <h5>Stranger Whispers 👻</h5>
+                <small>Synthwave & Thriller Mood</small>
+              </div>
+              <span class="track-dur">3:22</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN INTERACTIVA: TEST ¿QUÉ TANTO COINCIDIMOS? -->
+  <section id="quiz" class="section quiz-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle-badge">Minijuego interactivo 🎀</span>
+        <h2 class="section-title">¿Qué tanto nos parecemos tú y yo?</h2>
+        <p class="section-description">
+          ¡Responde estas 4 preguntas rápidas y descubre nuestro porcentaje de compatibilidad!
+        </p>
+        <div class="title-divider">
+          <span>✨</span>
+        </div>
+      </div>
+
+      <div class="quiz-box" id="quizContainer">
+        <div class="quiz-question-card" id="questionCard">
+          <div class="quiz-step" id="quizStep">Pregunta 1 de 4</div>
+          <h3 class="quiz-question" id="quizQuestion">¿Qué plan de fin de semana prefieres?</h3>
+          
+          <div class="quiz-options" id="quizOptions">
+            <!-- Renderizado por JS -->
+          </div>
+        </div>
+
+        <div class="quiz-result-card hidden" id="quizResultCard">
+          <div class="result-badge">✨ Resultado ✨</div>
+          <div class="percentage-circle" id="percentageCircle">
+            <span id="percentageNumber">95%</span>
+          </div>
+          <h3 id="resultTitle">¡Almas gemelas de gustos! 💖</h3>
+          <p id="resultDesc">¡Tenemos gustos súper parecidos! Seguro seríamos excelentes amigos.</p>
+          <button class="btn btn-primary" id="restartQuizBtn">
+            <i class="fa-solid fa-rotate-right"></i> Jugar otra vez
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN MENSAJITO / CONTACTO -->
+  <section id="contacto" class="section contact-section">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-header">
+          <div class="envelope-icon">💌</div>
+          <h2>¡Déjame un mensajito bonito!</h2>
+          <p>¿Quieres decirme hola, desearme éxitos en Grado 11 o recomendarme una serie de terror? ¡Escríbeme!</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nameInput"><i class="fa-regular fa-user"></i> Tu Nombre o Apodo:</label>
+              <input type="text" id="nameInput" placeholder="Ej. Camila, Mateo..." required>
+            </div>
+            <div class="form-group">
+              <label for="vibeInput"><i class="fa-regular fa-face-smile"></i> ¿Cómo me conoces?</label>
+              <select id="vibeInput">
+                <option value="Colegio María Currea">Compañer@ de María Currea 🏫</option>
+                <option value="Amig@">Amigo / Amiga 💖</option>
+                <option value="Conocid@">Conocido / Familia 🌸</option>
+                <option value="Pasaba por aquí">Visitante web ✨</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="messageInput"><i class="fa-regular fa-comment-dots"></i> Tu Mensaje:</label>
+            <textarea id="messageInput" rows="4" placeholder="Escribe tu mensaje con todo el cariño..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary submit-btn">
+            <span>Enviar mensajito</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+
+        <!-- Mensajes recibidos en vivo -->
+        <div class="recent-messages-box">
+          <h4><i class="fa-solid fa-sparkles"></i> Mensajitos en el muro de Laura:</h4>
+          <div class="messages-list" id="messagesList">
+            <div class="msg-bubble">
+              <div class="msg-author">🌸 Sofi (Grado 11):</div>
+              <p>¡Muchos éxitos este año Lau! ¡La mejor promo del María Currea! 💖</p>
+            </div>
+            <div class="msg-bubble">
+              <div class="msg-author">👻 Carlos:</div>
+              <p>¡Tienes que ver 'La Maldición de Hill House' si te gusta el terror, te va a encantar!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL DE MENSAJE SORPRESA -->
+  <div class="modal-overlay" id="surpriseModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-emoji">💌✨</div>
+      <h3 class="modal-title">Mensaje de Laura para ti</h3>
+      <p class="modal-body" id="quoteText">
+        "Recuerda que brillar no se trata de no tener sombras, sino de iluminar con tu propia luz dondequiera que vayas." 🌸
+      </p>
+      <button class="btn btn-primary" id="anotherQuoteBtn">
+        <i class="fa-solid fa-wand-magic-sparkles"></i> Otra frase linda
+      </button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Laura ✨</h3>
+        <p>Estudiante de Grado 11 · Colegio María Currea</p>
+      </div>
+      <div class="footer-copy">
+        <p>Diseñado con muchísimo 💖, estilo y ternura en tonos rosa.</p>
+        <small>© 2026 Laura. Todos los derechos y sonrisas reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
